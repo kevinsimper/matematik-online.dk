@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "deploy": "docker-compose build && docker tag -f matematikonlinedk_web registry.blackbeard.io/kevinsimper/matematikonline && docker push registry.blackbeard.io/kevinsimper/matematikonline"
   },
   "repository": {
     "type": "git",
